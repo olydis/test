@@ -1,0 +1,93 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eee;
+	font-family: "Roboto Slab", Georgia, Times, serif;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 27px;
+	color: #666;
+}
+
+header {
+	text-align: center;
+
+	nav {
+		margin: 2em 0;
+		hr {
+			height: 0.2em;
+			background-color: #eee;
+		}
+		ul {
+			list-style: none;
+			li {
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 7px 9px;
+				font-size: 0.8em;
+				font-weight: 400;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}
+
+h1 {
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&.active {
+		color: #177;
+	}
+}
+
+section {
+	font-size: 1.1em;
+	a {
+		color: #177;
+	}
+	hr {
+		height: 1em;
+		margin: 2em auto;
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
+		max-width: 16em;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	border: none;
+}
+
+#main {
+	max-width: 54em;
+	padding: 2em 6em;
+	margin: 1em auto;
+	background: #fff;
+}
+
+$twitter: #78cdf0;
+
+.youtube-player {
+	border: 0px;
+	display: block;
+	margin: 0px;
+	width: 420px;
+	height: 236px;
+	margin: 1em 0;
+}

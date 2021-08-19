@@ -1,0 +1,14 @@
+# Constants
+title: Timothy Nguyen
+tagline: Machine learning, mathematics, quantum field theory
+url: https://timothynguyen.org
+socialimg: /media/me.jpg
+twitter: IAmTimNguyen
+
+# Generation settings
+exclude: []
+permalink: none
+collections:
+  pages:
+    output: true
+    permalink: /:name:output_ext

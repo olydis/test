@@ -1,0 +1,28 @@
+<header>
+	<h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+	<p>{{ site.tagline }}</p>
+	<nav>
+		<hr>
+		<ul>
+			{%- assign _pages = site.pages | sort: 'order' -%}
+			{%- for _page in _pages -%}
+				{%- assign _title = _page.title -%}
+				{%- assign _shorttitle = _page.short-title | default: _title -%}
+				{%- if _shorttitle != "" -%}
+				<li>
+					{%- if _page.url == page.url -%}
+						<a href="#" class="active">
+							{{- _shorttitle -}}
+						</a>
+					{%- elsif _page.url -%}
+						<a href="{{- _page.url | relative_url -}}">
+							{{- _shorttitle -}}
+						</a>
+					{%- endif -%}
+				</li>
+				{%- endif -%}
+			{%- endfor -%}
+		</ul>
+		<hr>
+	</nav>
+</header>
